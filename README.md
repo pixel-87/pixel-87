@@ -2,8 +2,6 @@ Hi!
 
 I am a student at university of Exeter studying comp sci.
 
-Profile visits: ![](https://komarev.com/ghpvc/?username=pixel-87&color=green)
-
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pixel-87&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 
 <!---

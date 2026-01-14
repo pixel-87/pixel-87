@@ -2,6 +2,10 @@ Hi!
 
 I am a student at university of Exeter studying comp sci.
 
+my website is ed-thomas.dev, have a look.
+
+Started learning go and I'm in love
+
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pixel-87&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 
 <!---

@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allows manual trigger for testing
 jobs:
   github-metrics:
-    runs-on: ubuntu-24.04-arm # Leverages GitHub's new ARM64 infrastructure
+    runs-on: ubuntu-slim
     permissions:
       contents: write
     steps:

@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allows manual trigger for testing
 jobs:
   github-metrics:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:

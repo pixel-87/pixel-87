@@ -2,8 +2,10 @@ name: Metrics
 on:
   schedule:
     - cron: "0 0,12 * * *" # Runs at 00:00 and 12:00 UTC
-  push: {branches: ["master", "main"]}
+  push: 
+    branches: ["master", "main"]
   workflow_dispatch: # Allows manual trigger for testing
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -17,26 +19,31 @@ jobs:
           # Automatic GitHub token for committing the result
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
+          # User info
           user: pixel-87
           template: classic
           base: header, activity, community, repositories
           config_animations: yes
           config_timezone: Europe/London
-          
+
           # Optimization settings
           optimize: yes
-          use_prebuilt_image: yes # Uses the pre-compiled Docker image to save build time
+          use_prebuilt_image: yes 
+          repositories_limit: 50 # Prevents hitting the 30/30 Search API limit
 
           # Plugins
           plugin_achievements: yes
           plugin_achievements_display: compact
+          
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          
           plugin_languages: yes
           plugin_languages_details: percentage
-          plugin_languages_skipped: tex, jupyter notebook
           plugin_languages_sections: most-used
-          plugin_languages_indepth: yes
           plugin_languages_threshold: 2%
+          plugin_languages_indepth: no # Set to 'no' to prevent long clone/scan times
+          plugin_languages_skipped: tex, jupyter notebook
+          
           plugin_lines: yes
           plugin_traffic: yes

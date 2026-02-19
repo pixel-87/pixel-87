@@ -43,7 +43,7 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_threshold: 2%
           plugin_languages_indepth: no # Set to 'no' to prevent long clone/scan times
-          plugin_languages_skipped: tex, jupyter-notebook
+          plugin_languages_ignored: tex, jupyter-notebook, jupyter notebook
           
           plugin_lines: yes
           plugin_traffic: yes
